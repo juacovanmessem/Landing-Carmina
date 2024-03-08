@@ -40,7 +40,7 @@
 }
 
 .bg-magenta{
-  background-color: #f16098;
+  background-color: #5ec1cc;
 }
 
 .bg-cyan{
@@ -103,6 +103,13 @@
 
 .img-height{
   max-height: 500px;
+}
+
+.img-small{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  border: solid 2px var(--gold);
 }
 
 .filter-shadow{
@@ -179,7 +186,7 @@
 }
 
 .modal-header {
-  background-color: #c40f54; 
+  background-color:#5ec1cc; 
   color: #fff; 
 }
 
@@ -189,7 +196,7 @@
 
 .section-subtitle{
   text-align: center;
-  border-bottom: 2px solid #c40f54;
+  border-bottom: 2px solid #5ec1cc;
 }
 
 .fixed-bot{

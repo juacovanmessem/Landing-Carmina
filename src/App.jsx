@@ -88,7 +88,7 @@ function App() {
         {/* section main hero */}
         <div className="px-4 py-5 text-center bg-img-2 text-black">
           <div className='bg-faded-1 py-2'>
-            <h1 className="font-montserrat">FORMACIÓN INTEGRAL DEL TRAUMA EN ADULTOS </h1>
+            <h1 className="font-montserrat">ABORDAJE INTEGRAL DEL TRAUMA EN ADULTOS </h1>
             <div className="col-lg-6 mx-auto">
               <p className="lead fs-4 fw-bold mb-4">Programa Online para profesionales de la salud Mental</p>
               <p className="lead mb-4">Conviértete en un profesional informado en Trauma y descubre un modelo de abordaje que integra: Gestalt, neurociencias y terapia corporal en el tratamiento del trauma complejo en adultos.</p>
@@ -116,12 +116,13 @@ function App() {
             <p className="lead mb-4"> Anímate a dar un salto de calidad en tu profesión.</p>
           </div>
           <div className='col-12 text-center'>
+            <h2 className="lead section-title fs-4 py-4"> En el siguiente video conocerás porqué es importante que incorpores este enfoque revolucionario en tus sesiones de psicoterapia</h2>
             <iframe 
               width="auto" 
               height="500" 
               src="https://www.youtube.com/embed/LueqfqRicRI" 
               frameborder="0" 
-              allowfullscreen
+              allowfullScreen
               className='p-4 col-12 col-md-10'>
             </iframe>
           </div>
@@ -144,7 +145,7 @@ function App() {
             </Button>
             <Collapse in={open}>
               <div id="example-collapse-text">
-                <p className="lead mb-4 text-align-justify">Entendí que las personas que han sufrido experiencias adversas en la infancia tales como abandono, abuso, negligencia, violencia en diferentes formas, tienen algo en común. Hay una parte de ellas que quedó en el pasado y que encierra cientos de imágenes emociones y sensaciones corporales que guardadas bajo llave para defenderse del  dolor. Y todo ese esfuerzo por dejar atrás ese pasado muchas veces se lleva consigo aspectos como la confianza, la creatividad, la capacidad de disfrute, el autocuidado y la posibilidad de vivir una vida en plenitud.</p>            
+                <p className="lead my-4 text-align-justify">Entendí que las personas que han sufrido experiencias adversas en la infancia tales como abandono, abuso, negligencia, violencia en diferentes formas, tienen algo en común. Hay una parte de ellas que quedó en el pasado y que encierra cientos de imágenes emociones y sensaciones corporales que guardadas bajo llave para defenderse del  dolor. Y todo ese esfuerzo por dejar atrás ese pasado muchas veces se lleva consigo aspectos como la confianza, la creatividad, la capacidad de disfrute, el autocuidado y la posibilidad de vivir una vida en plenitud.</p>            
                 <p className="lead mb-4 text-align-justify">Puedo entender lo que me pasa racionalmente pero me cuesta no desbordarme emocionalmente.</p>
                 <p className="lead mb-4 text-align-justify">No puedo confiar en nadie porque siento que todos pueden lastimarme.</p>
                 <p className="lead mb-4 text-align-justify">Cuando alguien me grita o confronta quiero desaparecer… me hago chiquitita y me paralizo.</p>
@@ -159,12 +160,12 @@ function App() {
       </section>
       <section>
         {/* section timer */}
-        <div className="px-4 py-5 bg-magenta text-center text-light">
+        <div className="px-4 py-5 bg-magenta text-center text-black">
           <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR TIEMPO LIMITADO</h1>
           <div className='lead fw-bold'>
             <CountdownTimer targetDate="2024-03-20T00:00:00" />
           </div>
-          <a href='#payments' className="btn btn-outline-light btn-lg px-4 gap-3 mt-3 fw-bold">Reserva tu lugar ahora</a>
+          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Reserva tu lugar ahora</a>
         </div>
       </section>
       <section id='methodologies'>
@@ -234,11 +235,14 @@ function App() {
               <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>MATERIAL COMPLEMENTARIO:</strong> videos, films y temas musicales que podrás usar para armar tu propia batería de recursos de asistencia y psicoeducación.</p></div>
             </div>
             <div className='col-12 row g-0 justify-content-center div-right'>
-              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>COMUNIDAD EXCLUSIVA DE INTERCAMBIO:</strong> formarás parte de una comunidad exclusiva de acompañamiento a través de Whatsapp durante todo el cursado</p></div>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>COMUNIDAD EXCLUSIVA DE INTERCAMBIO:</strong> formarás parte de una comunidad exclusiva de acompañamiento a través de Whatsapp durante todo el cursado.</p></div>
             </div>
-          </div>
-          <div className='col-12 bg-cream'>
-            <p className='p-5 lead'>La propuesta de Cursado es Online a través de la Plataforma ZOOM y el material complementario estará disponible en una plataforma de E Learning de por vida. Podrás hacer consultas de manera asincrónica y ver las clases en el momento que lo decidas</p>
+            <div className='col-12 row g-0 justify-content-center div-right'>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'> MODALIDAD DE CURSADO</strong>: La propuesta de Cursado es Online a través de la Plataforma ZOOM y el material complementario estará disponible en una plataforma de E Learning de por vida. Podrás hacer consultas de manera asincrónica y ver las clases en el momento que lo decidas.</p></div>
+            </div>
+            <div className='col-12 row g-0 justify-content-center div-right'>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>DESTINATARIOS</strong>: psicologos, psiquiatras y estudiantes avanzados de la salud mental; profesionales de la educación y el desarrollo social (podran realizar el programa introductorio: módulos 1 y 2) </p></div>
+            </div>
           </div>
         </div>
       </section>
@@ -249,7 +253,7 @@ function App() {
             <div className='p-4 mb-4 bg-cream row g-0 align-items-center'>
               <div className='text-center col-12 col-md-6'>
                 <img src="./src/images/foto-redes.jpg" alt="" className="img-height img-fluid" />
-                <div className='bg-magenta text-white fw-bold p-2'>
+                <div className='bg-magenta text-black fw-bold p-2'>
                   <h3>
                     Soy Carmina Varela
                   </h3>
@@ -291,9 +295,9 @@ function App() {
             <div className="card bg-cream">
               <img src="./src/images/AGUSTIN-GRAS.jpg" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title bg-magenta text-light px-2">Agustín Gras</h5>
+                <h5 className="card-title bg-magenta text-black px-2">Agustín Gras</h5>
                 <p className="card-text">Certificación en Psicotraumatología CCTP III - especialización en Trauma Complejo y Trastornos Disociativos.</p>
-                <Button className='bg-magenta text-light' variant='outline-danger' onClick={() => setLg1Show(true)}>Mas información</Button>
+                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg1Show(true)}>Mas información</Button>
               </div>
             </div>
             <Modal size="lg" show={lg1Show} onHide={() => setLg1Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
@@ -318,9 +322,9 @@ function App() {
             <div className="card bg-cream">
               <img src="./src/images/maru-gonzalez.jpg" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title bg-magenta text-light px-2">Mariana Indira Gonzáles</h5>
+                <h5 className="card-title bg-magenta text-black px-2">Mariana Indira González</h5>
                 <p className="card-text">Psicoterapeuta Gestáltica - Psicóloga Forense Fuero Penal Formación en Litigio con perspectiva de Género.</p>
-                <Button className='bg-magenta text-light' variant='outline-danger' onClick={() => setLg2Show(true)}>Mas información</Button>
+                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg2Show(true)}>Mas información</Button>
               </div>
             </div>
             <Modal size="lg" show={lg2Show} onHide={() => setLg2Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
@@ -346,9 +350,9 @@ function App() {
             <div className="card bg-cream">
               <img src="./src/images/JUDITH-RODRIGUEZ.jpg" className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title bg-magenta text-light px-2">Judith Rodriguez</h5>
+                <h5 className="card-title bg-magenta text-black px-2">Judith Rodriguez</h5>
                 <p className="card-text">Psicoterapeuta gestáltica - Psicoterapeuta corporal con orientación Reicheana, Especialista en Eneagrama</p>
-                <Button className='bg-magenta text-light' variant='outline-danger' onClick={() => setLg3Show(true)}>Mas información</Button>
+                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg3Show(true)}>Mas información</Button>
               </div>
             </div>
             <Modal size="lg" show={lg3Show} onHide={() => setLg3Show(false)} aria-labelledby="example-modal-sizes-title-lg">
@@ -371,7 +375,7 @@ function App() {
           <a href='#payments' className="btn btn-outline-light btn-lg px-4 gap-3 mt-3 fw-bold col-5">Reserva tu lugar ahora</a>
         </div>
       </section>
-      <section>
+      <section id='recorded-testmonies'>
         {/* section testimonies */}
         <div className="px-4 py-5 bg-cyan">
           <div className='row g-0 justify-content-evenly'>
@@ -436,11 +440,11 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='recorded-testmonies'>
+      <section>
         {/* section videos */}
         <div className='row g-0 justify-content-center py-4 bg-cream'>
           <div className="section-title py-2">
-            <h2>Estos colegas ya hicieron su experiencia y te la cuentan asi: </h2>
+            <h2>Ellos ya hicieron su experiencia y te la cuentan asi: </h2>
           </div>
           <div className='col-12 col-md-10 col-lg-6 text-center faq-header mb-4 fw-bold'>
             <h3 className='text-gold-underline'>Pacientes</h3>
@@ -497,7 +501,7 @@ function App() {
         <div className="px-4 py-5 bg-cyan">
           <div className='row g-0'>
             <div className='text-center p-4 fs-3 text-white'>
-              <h3>Capturas</h3>
+              <h3>¿Para qué te servira esta formación?</h3>
             </div>
             <div className='col-12 col-md-6 col-lg-4 row g-0'>
               <button onClick={() => setImg1Show(true)}>
@@ -571,7 +575,7 @@ function App() {
       <section id='payments'>
         {/* section payments */}
         <div className="p-5 bg-cream">
-          <div>
+          <div className='text-center'>
             <div className='faq-header mb-4 fw-bold text-center'>
               <h2>Precios</h2>
             </div>
@@ -579,6 +583,7 @@ function App() {
             <p className='lead'><strong>Precio especial hasta el 20 de Marzo</strong> : U$S 249 </p>
             <p className='lead'><strong>Precio para Argentina</strong> :30% OFF  U$S 179 o $197.000 Financiación hasta en 4 cuotas</p>
             <p className='lead'>Se abono en tu moneda Local - Financiación disponible con Tarjeta de Credito </p>
+            <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/17MqWB8b4oL_tcS1fwzhR5aSs9llPKVFN/view?usp=drive_link' target='_blank' className='link-info'>AQUÍ</a></p>
           </div>
           <div className="row">
             <div className='faq-header mb-4 fw-bold text-center'>
@@ -597,7 +602,7 @@ function App() {
               <div className="card payment-card h-100">
                 <div className="card-body">
                   <h5 className="card-title">Pagos desde Argentina</h5>
-                  <p className="card-text">Utiliza medios locales para pagos desde Argentina.</p>
+                  <p className="card-text">Chatea con nosotros para ofrecerte la opción de pago que más te convenga.</p>
                   <a href="https://wa.me/message/J7LHFZTGP532D1" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
@@ -606,7 +611,7 @@ function App() {
               <div className="card payment-card h-100">
                 <div className="card-body">
                   <h5 className="card-title">Otras consultas</h5>
-                  <p className="card-text">Contacta con nosotros a traves de WhastApp</p>
+                  <p className="card-text">Contacta con nosotros a traves de WhastApp.</p>
                   <a href="https://wa.me/message/J7LHFZTGP532D1" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Contactarse</a>
                 </div>
               </div>
@@ -630,7 +635,7 @@ function App() {
             <Accordion.Item eventKey="1">
               <Accordion.Header>¿Hay algun contenido disponible para ver antes de comenzar el curso?</Accordion.Header>
               <Accordion.Body>
-                Si la primera clase estará disponible desde  el 20 de Marzo en la Plataforma
+                Si, la primera clase estará disponible desde  el 20 de Marzo en la Plataforma
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
@@ -640,12 +645,24 @@ function App() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>¿Obtendré un certificado al finalizar del Programa?</Accordion.Header>
+              <Accordion.Header>¿Obtendré un certificado al finalizar el Programa?</Accordion.Header>
               <Accordion.Body>
-                Al finalizar el programa obtendrás un certificado de asistencia. Para acceder al certificado de aprobación deberás participar del primer y último Workshop en VIvo y completar el formulario de Autoevaluación Final 
+                Al finalizar el programa obtendrás un certificado de asistencia. Para acceder al certificado de aprobación deberás participar del primer y último Workshop en Vivo y completar el formulario de Autoevaluación Final 
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+        </div>
+      </section>
+      <section className='bg-cream'>
+        {/* section punch line */}
+        <div className='p-5 text-center'>
+          <p className='fs-3 fst-italic'>
+            "Fuimos heridos en relaciones tempranas lo cual significa que vamos a sanar en relación. Las relaciones pueden ser fuente de sanación que si se abordan adecuadamente, con presencia y compasión." -Gabor Maté. 
+          </p>
+          <p className='fs-3 lead'>
+            Si estas listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
+          </p>
+          <img src="./src/images/foto-redes.jpg" alt="" className='img-small'  />
         </div>
       </section>
       <footer className="py-4 bg-cyan text-light">
@@ -653,7 +670,7 @@ function App() {
           <span className='col-12 col-md-6'>Envianos un email a: carminavarelapsicologa@gmail.com</span>
           <span className='col-12 col-md-6'> O hablanos al: +54 9 381 210 2004</span>
         </div>
-        <p class="text-center text-body-light">© 2024 Company, Inc</p>
+        <p class="text-center text-body-light">© 2024 Carmina Varela</p>
       </footer>
       <section className='fixed-bot text-end'>
         {/* boton de wp y scroll*/}
