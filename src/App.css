@@ -1,0 +1,259 @@
+:root{
+  --gold: #93831e;
+  --shadow: #2029208a;
+}
+
+.font-montserrat{
+  font-family: Montserrat;
+} 
+
+.bg-img{
+  background-image: image-set('./src/images/10.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-img-2{
+  background-image: image-set('./src/images/9.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-img-3{
+  background-image: image-set('./src/images/3.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-img-4{
+  background-image: image-set('./src/images/4.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.text-gold-underline{
+  text-decoration:var(--gold) underline;
+}
+
+.bg-magenta{
+  background-color: #f16098;
+}
+
+.bg-cyan{
+  background-color: #5ec1cc;
+}
+
+.bg-cream{
+  background-color: #F3F1F1;
+}
+
+.bg-faded-1{
+  backdrop-filter: blur(10px);
+  background-color: #f3f1f148;
+}
+
+.bg-faded-2{
+  backdrop-filter: blur(10px);
+  background-color: #f3f1f189;
+}
+
+.bi-quote{
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.text-align-justify{
+  text-align: justify;
+}
+
+.bubble{
+  background-color: white;
+  border-radius: 7rem 5px 7rem 5px;
+  border: 3px solid;
+  border-color: var(--gold);
+  filter: drop-shadow(15px 10px 4px #232f488a);
+}
+
+.text-gold{
+  color: var(--gold);
+}
+
+.rounded-box{
+  border-radius: 20px;
+  filter: drop-shadow(15px 10px 4px var(--shadow));
+  border: 3px solid;
+  border-color: var(--gold);
+}
+.rounded-box-right{
+  border-radius: 0px 15px 15px 0px;
+  filter: drop-shadow(15px 10px 4px var(--shadow));
+  border: 3px solid;
+  border-color: var(--gold);
+}
+
+.rounded-box-left{
+  border-radius: 15px 0px 0px 15px;
+  filter: drop-shadow(10px 15px 4px var(--shadow));
+  border: 3px solid;
+  border-color: var(--gold);
+}
+
+.img-height{
+  max-height: 500px;
+}
+
+.filter-shadow{
+  filter: drop-shadow(1px 5px 4px var(--shadow));
+}
+
+.filter-shadow-solid{
+  filter: drop-shadow(2px 2px 1px var(--shadow));
+}
+
+.btn-fixed{
+  height: 61px;
+  width: 61px;
+  border-radius: 26.1%;
+}
+
+.card-img-top{
+  height: 350px;
+}
+
+.payment-card {
+  background-color: #5ec1cc;;
+  border: none;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  transition: transform 0.3s ease; 
+}
+.payment-card:hover {
+  transform: translateY(-5px);
+}
+.payment-link {
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+.payment-link:hover {
+  color: #B2EBF2; 
+  text-decoration: underline;
+}
+
+.carousel-caption h3 {
+  color: #fff; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.accordion-button {
+  background-color: #f8f9fa; 
+  color: #000; 
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #5ec1cc;
+}
+
+.accordion-body {
+  background-color:#F3F1F1; 
+}
+
+.faq-header h2 {
+  border-bottom: 2px solid var(--gold); 
+}
+
+.section-title {
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 2rem; 
+  font-size: 2rem; 
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
+.modal-content {
+  background-color: #f8f9fa; 
+  color: #333; 
+}
+
+.modal-header {
+  background-color: #c40f54; 
+  color: #fff; 
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.section-subtitle{
+  text-align: center;
+  border-bottom: 2px solid #c40f54;
+}
+
+.fixed-bot{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: drop-shadow(2px 2px 2px white);
+  width: auto; 
+  height: auto; 
+  font-size: 2rem;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #5ec1cc; 
+}
+
+.carousel-control-prev {
+  left: 0; 
+}
+
+.carousel-control-next {
+  right: 0; 
+}
+
+.div-right{
+  view-timeline-name: --div-right;
+  view-timeline-axis: block;
+
+  animation-timeline: --div-right;
+  animation-name: show;
+
+  animation-range: entry 10% cover 40%;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 0.5s ease-out;
+  
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .img-height, .carousel-item video {
+    max-height: 300px;
+  }
+}
