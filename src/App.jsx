@@ -6,7 +6,26 @@ import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from 'react-bootstrap/Carousel';
-import foto1 from '../src/images/foto-redes.jpg'
+import Carmina from '../src/images/foto-redes.jpg'
+import agustin from '../src/images/AGUSTIN-GRAS.jpg'
+import judith from '../src/images/JUDITH-RODRIGUEZ.jpg'
+import maru from '../src/images/maru-gonzalez.jpg'
+import t2 from '../src/images/TESTIMONIOS 2.png'
+import t3 from '../src/images/TESTIMONIOS 3HEI.png'
+import t4 from '../src/images/TESTOMINIOS 4 HEI.png'
+import t5 from '../src/images/TESTIMONIOS 5 HEI.png'
+import t6 from '../src/images/TESTIMONIO 6 HEI.png'
+import t7 from '../src/images/TESTIMONIOS 7 HEI.png'
+import f1 from '../src/images/flyer.jpg'
+import v1 from '../src/videos/t-paciente1.mp4'
+import v2 from '../src/videos/t-paciente2.mp4'
+import v4 from '../src/videos/t-terapeuta-1.mp4'
+import v5 from '../src/videos/t-terapeuta-2.mp4'
+import v6 from '../src/videos/t-terapeuta-3.mp4'
+import bg1 from '../src/images/9.jpg'
+import bg2 from '../src/images/10.jpg'
+import bg3 from '../src/images/3.jpg'
+import bg4 from '../src/images/4.jpg'
 
 
 function App() {
@@ -88,7 +107,12 @@ function App() {
     <>
       <section id='main'>
         {/* section main hero */}
-        <div className="px-4 py-5 text-center bg-img-2 text-black">
+        <div className="px-4 py-5 text-center text-black" style={{
+        backgroundImage: `url(${bg1})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
           <div className='bg-faded-1 py-2'>
             <h1 className="font-montserrat">ABORDAJE INTEGRAL DEL TRAUMA EN ADULTOS </h1>
             <div className="col-lg-6 mx-auto">
@@ -108,7 +132,7 @@ function App() {
         {/* section promotion */}
         <div className="px-4 py-5 bg-cyan text-black row g-0">
           <div className=' col-lg-6 col-12 row g-0 justify-content-center'>  
-          <img src="./src/images/flyer.jpg" alt="Flyer del curso ofrecido" className='img-fluid rounded img-height p-4 col-12 col-md-10 col-lg-6 w-auto' />   
+          <img src={f1} alt="Flyer del curso ofrecido" className='img-fluid rounded img-height p-4 col-12 col-md-10 col-lg-6 w-auto' />   
           </div>
           <div className="col-lg-6 col-12 justify-content-center px-4 text-black">
             <p className="lead fw-bold mb-4 text-center">Aprende a trabajar con tus pacientes desde la Terapia somática - compasiva y ayúdalos a vivir una vida más plena y conectada con su ser </p>
@@ -132,7 +156,12 @@ function App() {
       </section>
       <section>
         {/* section storyTelling */}
-        <div className="px-4 py-5 bg-img text-black">
+        <div className="px-4 py-5 text-black" style={{
+        backgroundImage: `url(${bg2})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
           <div className="col-lg-11 p-3 mx-auto bg-faded-2">
             <p className="display-6 mb-4 text-center fw-bold">Una breve historia </p>
             <p className="lead mb-4 text-align-justify">Si estás acá es porque estás buscando nuevas maneras de acompañar a tus pacientes y las herramientas con las que cuentas te están resultando insuficientes. </p>
@@ -172,7 +201,12 @@ function App() {
       </section>
       <section id='methodologies'>
         {/* section program */}
-        <div className='bg-img-4 p-4'>
+        <div className='p-4'  style={{
+        backgroundImage: `url(${bg4})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
           <div className='bg-cream container-md p-4 text-center'>
             <header>
               <h1 className='fw-bold'>¿Qué aprenderás?</h1>
@@ -250,11 +284,16 @@ function App() {
       </section>
       <section id='professionals'>
         {/* section professionals */}
-        <div className='row g-0 justify-content-evenly bg-img-3 py-5'>
+        <div className='row g-0 justify-content-evenly py-5'  style={{
+        backgroundImage: `url(${bg3})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
           <div className='col-12 col-md-11'>
             <div className='p-4 mb-4 bg-cream row g-0 align-items-center'>
               <div className='text-center col-12 col-md-6'>
-                <img src="./src/images/foto-redes.jpg" alt="" className="img-height img-fluid" />
+                <img src={Carmina} alt="" className="img-height img-fluid" />
                 <div className='bg-magenta text-black fw-bold p-2'>
                   <h3>
                     Soy Carmina Varela
@@ -295,7 +334,7 @@ function App() {
           <div className='col-12 section-subtitle text-light pb-2'><h2>DOCENTES INVITADOS </h2></div>
           <div className='col-11 col-md-5 col-lg-3 my-3'>
             <div className="card bg-cream">
-              <img src="./src/images/AGUSTIN-GRAS.jpg" className="card-img-top" alt="..." />
+              <img src={agustin} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title bg-magenta text-black px-2">Agustín Gras</h5>
                 <p className="card-text">Certificación en Psicotraumatología CCTP III - especialización en Trauma Complejo y Trastornos Disociativos.</p>
@@ -322,7 +361,7 @@ function App() {
           </div>
           <div className='col-11 col-md-5 col-lg-3 my-3'>
             <div className="card bg-cream">
-              <img src="./src/images/maru-gonzalez.jpg" className="card-img-top" alt="..." />
+              <img src={maru} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title bg-magenta text-black px-2">Mariana Indira González</h5>
                 <p className="card-text">Psicoterapeuta Gestáltica - Psicóloga Forense Fuero Penal Formación en Litigio con perspectiva de Género.</p>
@@ -350,7 +389,7 @@ function App() {
           </div>
           <div className='col-11 col-md-5 col-lg-3 my-3'>
             <div className="card bg-cream">
-              <img src="./src/images/JUDITH-RODRIGUEZ.jpg" className="card-img-top" alt="..." />
+              <img src={judith} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title bg-magenta text-black px-2">Judith Rodriguez</h5>
                 <p className="card-text">Psicoterapeuta gestáltica - Psicoterapeuta corporal con orientación Reicheana, Especialista en Eneagrama</p>
@@ -452,13 +491,13 @@ function App() {
             <h3 className='text-gold-underline'>Pacientes</h3>
             <Carousel activeIndex={index1} onSelect={handleSelect1} data-bs-theme="dark">
               <Carousel.Item className='text-center' interval={200000}>
-                <video src="./src/videos/t-paciente1.mp4"  className='img-height' controls></video>
+                <video src={v1}  className='img-height' controls></video>
                 <div className='pb-4'>
                   <h3>Corina Alvarez</h3>
                 </div>
               </Carousel.Item>
               <Carousel.Item className='text-center'  interval={200000}>
-                <video src="./src/videos/t-paciente2.mp4"  className='img-height' controls></video>
+                <video src={v2}  className='img-height' controls></video>
                 <div className='pb-4'>
                   <h3>Miguel Blanco</h3>
                 </div>
@@ -469,21 +508,21 @@ function App() {
             <h3 className='text-gold-underline'> Terapeutas </h3>
             <Carousel activeIndex={index2} onSelect={handleSelect2} data-bs-theme="dark">
               <Carousel.Item className='text-center' interval={200000}>
-                <video src="./src/videos/t-terapeuta-2.mp4"  className='img-height' controls></video>
+                <video src={v5}  className='img-height' controls></video>
                 <div className='pb-4'>
                   <h3>Gabriela Buratto</h3>
                 </div>
               </Carousel.Item>
               <Carousel.Item className='text-center' interval={200000}>
                 <div className=' object-fit-fill w-100 h-100 img-height'>
-                  <video src="./src/videos/t-terapeuta-1.mp4" className='img-fluid' controls></video>
+                  <video src={v4} className='img-fluid' controls></video>
                   <div className='pb-4'>
                     <h3>Belén Maltez Posse</h3>
                   </div>
                 </div>
               </Carousel.Item>
               <Carousel.Item className='text-center' interval={200000}>
-                <video src="./src/videos/t-terapeuta-3.mp4" className='img-height' controls></video>
+                <video src={v6} className='img-height' controls></video>
                 <div className='pb-4'>
                   <h3>Julieta Antonucci</h3>
                 </div>
@@ -507,67 +546,67 @@ function App() {
             </div>
             <div className='col-12 col-md-6 col-lg-4 row g-0'>
               <button onClick={() => setImg1Show(true)}>
-                <img src="./src/images/TESTIMONIOS 2.png" alt=""  className='img-fluid p-1 col'/>
+                <img src={t2} alt=""  className='img-fluid p-1 col'/>
               </button>
               <Modal size="lg" show={img1Show} onHide={() => setImg1Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTIMONIOS 2.png" alt=""  className='img-fluid p-1 col'/>
+                  <img src={t2} alt=""  className='img-fluid p-1 col'/>
                 </Modal.Body>
               </Modal>
               <button onClick={() => setImg2Show(true)}>
-                <img src="./src/images/TESTIMONIOS 5 HEI.png" alt="" className='img-fluid p-1 col'/>
+                <img src={t5} alt="" className='img-fluid p-1 col'/>
               </button>
               <Modal size="lg" show={img2Show} onHide={() => setImg2Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTIMONIOS 5 HEI.png" alt="" className='img-fluid p-1 col'/>
+                  <img src={t5} alt="" className='img-fluid p-1 col'/>
                 </Modal.Body>
               </Modal>
             </div>
             <div className='col-12 col-md-6 col-lg-4 row g-0'>
               <button onClick={() => setImg3Show(true)}>
-                <img src="./src/images/TESTIMONIOS 3HEI.png" alt="" className='img-fluid p-1 col'/>
+                <img src={t3} alt="" className='img-fluid p-1 col'/>
               </button>
               <Modal size="lg" show={img3Show} onHide={() => setImg3Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTIMONIOS 3HEI.png" alt="" className='img-fluid p-1 col'/>
+                  <img src={t3} alt="" className='img-fluid p-1 col'/>
                 </Modal.Body>
               </Modal>
               <button onClick={() => setImg4Show(true)}>
-                <img src="./src/images/TESTOMINIOS 4 HEI.png" alt="" className='img-fluid p-1 col'/>
+                <img src={t4} alt="" className='img-fluid p-1 col'/>
               </button>
               <Modal size="lg" show={img4Show} onHide={() => setImg4Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTOMINIOS 4 HEI.png" alt="" className='img-fluid p-1 col'/>
+                  <img src={t4} alt="" className='img-fluid p-1 col'/>
                 </Modal.Body>
               </Modal>
             </div>
             <div className='col-12 col-lg-4 row g-0'>
               <button onClick={() => setImg5Show(true)} className='col-md-6 col-lg-12'>
-                <img src="./src/images/TESTIMONIO 6 HEI.png" alt="" className='img-fluid col p-1'/>
+                <img src={t6} alt="" className='img-fluid col p-1'/>
               </button>
               <Modal size="lg" show={img5Show} onHide={() => setImg5Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTIMONIO 6 HEI.png" alt="" className='img-fluid col p-1'/>
+                  <img src={t6} alt="" className='img-fluid col p-1'/>
                 </Modal.Body>
               </Modal>
               <button onClick={() => setImg6Show(true)} className='col-md-6 col-lg-12'>
-                <img src="./src/images/TESTIMONIOS 7 HEI.png" alt="" className='img-fluid col p-1'/>
+                <img src={t7} alt="" className='img-fluid col p-1'/>
               </button>
               <Modal size="lg" show={img6Show} onHide={() => setImg6Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
                 <Modal.Header closeButton>
                 </Modal.Header>
                 <Modal.Body>
-                  <img src="./src/images/TESTIMONIOS 7 HEI.png" alt="" className='img-fluid col p-1'/>
+                  <img src={t7} alt="" className='img-fluid col p-1'/>
                 </Modal.Body>
               </Modal>
             </div>
@@ -621,7 +660,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='bg-img pb-5 pt-3'>
+      <section className='pb-5 pt-3' style={{
+        backgroundImage: `url(${bg2})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
         {/* section common questions */}
         <div className='container-sm'>
           <div className='faq-header mb-4 fw-bold text-center text-white'>
@@ -664,7 +708,7 @@ function App() {
           <p className='fs-3 lead'>
             Si estas listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
           </p>
-          <img src={foto1} alt="" className='img-small'  />
+          <img src={Carmina} alt="" className='img-small'/>
         </div>
       </section>
       <footer className="py-4 bg-cyan text-light">
