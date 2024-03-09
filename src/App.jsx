@@ -664,7 +664,7 @@ function App() {
           <p className='fs-3 lead'>
             Si estas listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
           </p>
-          <img src="./src/images/foto-redes.jpg" alt="" className={foto1} />
+          <img src={foto1} alt="" className='img-small'  />
         </div>
       </section>
       <footer className="py-4 bg-cyan text-light">
