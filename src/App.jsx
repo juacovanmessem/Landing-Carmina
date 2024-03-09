@@ -6,6 +6,8 @@ import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from 'react-bootstrap/Carousel';
+import foto1 from '../src/images/foto-redes.jpg'
+
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -662,7 +664,7 @@ function App() {
           <p className='fs-3 lead'>
             Si estas listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
           </p>
-          <img src="./src/images/foto-redes.jpg" alt="" className='img-small'  />
+          <img src="./src/images/foto-redes.jpg" alt="" className={foto1} />
         </div>
       </section>
       <footer className="py-4 bg-cyan text-light">
