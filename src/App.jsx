@@ -736,13 +736,13 @@ function App() {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
-              <Accordion.Header>¿Puedo sumarme una vez ya iniciado el curso?</Accordion.Header>
+              <Accordion.Header>¿Puedo sumarme una vez ya iniciado el cursado?</Accordion.Header>
               <Accordion.Body>
               Sí puedes sumarte en cualquier momento ya que el material queda grabado y puedes hacerlo a tu ritmo.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="5">
-              <Accordion.Header>¿Qué pasa su no es lo que busco?</Accordion.Header>
+              <Accordion.Header>¿Qué pasa si no es lo que busco?</Accordion.Header>
               <Accordion.Body>
               Si en el plazo de las primeras dos semanas te das cuenta de que el Programa no es lo que buscabas te devolvemos tu dinero. 
               </Accordion.Body>
