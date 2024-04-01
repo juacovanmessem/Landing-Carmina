@@ -10,12 +10,6 @@ import Carmina from '../src/images/foto-redes.jpg'
 import agustin from '../src/images/AGUSTIN-GRAS.jpg'
 import judith from '../src/images/JUDITH-RODRIGUEZ.jpg'
 import maru from '../src/images/maru-gonzalez.jpg'
-import t2 from '../src/images/TESTIMONIOS 2.png'
-import t3 from '../src/images/TESTIMONIOS 3HEI.png'
-import t4 from '../src/images/TESTOMINIOS 4 HEI.png'
-import t5 from '../src/images/TESTIMONIOS 5 HEI.png'
-import t6 from '../src/images/TESTIMONIO 6 HEI.png'
-import t7 from '../src/images/TESTIMONIOS 7 HEI.png'
 import f1 from '../src/images/flyer.jpg'
 import v1 from '../src/videos/t-paciente1.mp4'
 import v2 from '../src/videos/t-paciente2.mp4'
@@ -28,17 +22,12 @@ import bg3 from '../src/images/3.jpg'
 import bg4 from '../src/images/4.jpg'
 
 
+
 function App() {
   const [open, setOpen] = useState(false);
   const [lg1Show, setLg1Show] = useState(false);
   const [lg2Show, setLg2Show] = useState(false);
   const [lg3Show, setLg3Show] = useState(false);
-  const [img1Show, setImg1Show] = useState(false);
-  const [img2Show, setImg2Show] = useState(false);
-  const [img3Show, setImg3Show] = useState(false);
-  const [img4Show, setImg4Show] = useState(false);
-  const [img5Show, setImg5Show] = useState(false);
-  const [img6Show, setImg6Show] = useState(false);
 
   const [index1, setIndex1] = useState(0);
 
@@ -54,54 +43,54 @@ function App() {
 
 
 
-  const CountdownTimer = ({ targetDate }) => {
-    const calculateTimeLeft = () => {
-      const difference = +new Date(targetDate) - +new Date();
-      let timeLeft = {};
+  // const CountdownTimer = ({ targetDate }) => {
+  //   const calculateTimeLeft = () => {
+  //     const difference = +new Date(targetDate) - +new Date();
+  //     let timeLeft = {};
   
-      if (difference > 0) {
-        timeLeft = {
-          Días: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          Horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          Minutos: Math.floor((difference / 1000 / 60) % 60),
-          Segundos: Math.floor((difference / 1000) % 60)
-        };
-      }
+  //     if (difference > 0) {
+  //       timeLeft = {
+  //         Días: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //         Horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
+  //         Minutos: Math.floor((difference / 1000 / 60) % 60),
+  //         Segundos: Math.floor((difference / 1000) % 60)
+  //       };
+  //     }
   
-      return timeLeft;
-    };
+  //     return timeLeft;
+  //   };
   
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  //   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setTimeLeft(calculateTimeLeft());
-      }, 1000);
+  //   useEffect(() => {
+  //     const timer = setTimeout(() => {
+  //       setTimeLeft(calculateTimeLeft());
+  //     }, 1000);
   
-      return () => clearTimeout(timer);
-    });
+  //     return () => clearTimeout(timer);
+  //   });
   
-    const timerComponents = [];
+  //   const timerComponents = [];
 
-    Object.keys(timeLeft).forEach((interval) => {
-      if (!timeLeft[interval]) {
-        return;
-      }
+  //   Object.keys(timeLeft).forEach((interval) => {
+  //     if (!timeLeft[interval]) {
+  //       return;
+  //     }
   
-      timerComponents.push(
-        <span key={interval}>
-          {timeLeft[interval]} {interval}{' '}
-        </span>
-      );
-    });
+  //     timerComponents.push(
+  //       <span key={interval}>
+  //         {timeLeft[interval]} {interval}{' '}
+  //       </span>
+  //     );
+  //   });
   
-    return (
-      <div>
-        {timerComponents.length ? timerComponents :<div><p>Lo sentimos la oferta ya ha terminado, pero igual puedes inscribirte aqui abajo ↓↓</p>
-        </div> }
-      </div>
-    );
-  };
+  //   return (
+  //     <div>
+  //       {timerComponents.length ? timerComponents :<div><p>Lo sentimos la oferta ya ha terminado, pero igual puedes inscribirte aqui abajo ↓↓</p>
+  //       </div> }
+  //     </div>
+  //   );
+  // };
 
   return (
     <>
@@ -142,13 +131,13 @@ function App() {
             <p className="lead mb-4"> Anímate a dar un salto de calidad en tu profesión.</p>
           </div>
           <div className='col-12 text-center'>
-            <h2 className="lead section-title fs-4 py-4"> En el siguiente video conocerás porqué es importante que incorpores este enfoque revolucionario en tus sesiones de psicoterapia</h2>
+            <h2 className="lead section-title fs-4 fw-bold py-4"> En el siguiente video conocerás porqué es importante que incorpores este enfoque revolucionario en tus sesiones de psicoterapia</h2>
             <iframe 
               width="auto" 
               height="500" 
               src="https://www.youtube.com/embed/LueqfqRicRI" 
               frameborder="0" 
-              allowfullScreen
+              allowfullscreen
               className='p-4 col-12 col-md-10'>
             </iframe>
           </div>
@@ -192,9 +181,12 @@ function App() {
       <section>
         {/* section timer */}
         <div className="px-4 py-5 bg-magenta text-center text-black">
-          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR TIEMPO LIMITADO</h1>
-          <div className='lead fw-bold'>
+          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA PARA ARGENTINA</h1>
+          {/* <div className='lead fw-bold'>
             <CountdownTimer targetDate="2024-03-20T00:00:00" />
+          </div> */}
+          <div className='lead'>
+            <p><span className='fw-bold fs-3'> 30% OFF:</span><span className='fs-5'> 5 cuotas fijas de </span><span className='fs-3'> $42.000</span><span className='fs-5'> o de contado </span><span className='fs-3'> U$S 197</span></p>
           </div>
           <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Reserva tu lugar ahora</a>
         </div>
@@ -224,25 +216,25 @@ function App() {
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  La teorías psicológicas más importantes vinculadas con el enfoque de la psicotraumatología</span>
+                <span>  Las teorías psicológicas más importantes vinculadas con el enfoque de la psicotraumatología.</span>
               </div>
               <div className='text-start p-3 border border-warning-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Los Principios de la Terapia Gestalt y la Terapia corporal Bioenergética aplicadas al tratamiento de personas que sufrieron experiencias adversas en la infancia</span>
+                <span>  Los Principios de la Terapia Gestalt y la Terapia corporal Bioenergética aplicadas al tratamiento de personas que sufrieron experiencias adversas en la infancia.</span>
               </div>
               <div className='text-start p-3 border border-warning-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  El modelo de abordaje integral de terapia somático compasiva que integra recursos teóricos metodológicos y actitudinales en el abordaje del Trauma Complejo</span>
+                <span>  El modelo de abordaje integral de <span className='fw-bold'>Terapia Somático Compasiva </span> que integra recursos teóricos metodológicos y actitudinales en el abordaje del Trauma Complejo.</span>
               </div>
             </article>
             <div>
-              <a href='https://drive.google.com/file/d/10WRYxB3XkN39ri3NRUq-aeAFNiDP-1pM/view?usp=drive' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
+              <a href='https://drive.google.com/file/d/1RMJlizJSzjL9K2z0eCU2j9UqWog6F3Zg/view' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
             </div>
           </div>
         </div>
@@ -417,7 +409,7 @@ function App() {
         </div>
       </section>
       <section id='recorded-testmonies'>
-        {/* section testimonies */}
+        {/* section testimonies -bubbles-*/}
         <div className="px-4 py-5 bg-cyan">
           <div className='row g-0 justify-content-evenly'>
             <div className='text-center  text-white mt-2 mb-4'>
@@ -538,77 +530,124 @@ function App() {
         </div>
       </section>
       <section>
-        {/* section testimonies 2 */}
+        {/* section testimonies 2 -utilities-*/}
         <div className="px-4 py-5 bg-cyan">
-          <div className='row g-0'>
+          <div className='container-md'>
             <div className='text-center p-4 fs-3 text-white'>
-              <h3>¿Para qué te servira esta formación?</h3>
+              <h3>¿Para qué te servirá esta Formación?</h3>
             </div>
-            <div className='col-12 col-md-6 col-lg-4 row g-0'>
-              <button onClick={() => setImg1Show(true)}>
-                <img src={t2} alt=""  className='img-fluid p-1 col'/>
-              </button>
-              <Modal size="lg" show={img1Show} onHide={() => setImg1Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t2} alt=""  className='img-fluid p-1 col'/>
-                </Modal.Body>
-              </Modal>
-              <button onClick={() => setImg2Show(true)}>
-                <img src={t5} alt="" className='img-fluid p-1 col'/>
-              </button>
-              <Modal size="lg" show={img2Show} onHide={() => setImg2Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t5} alt="" className='img-fluid p-1 col'/>
-                </Modal.Body>
-              </Modal>
-            </div>
-            <div className='col-12 col-md-6 col-lg-4 row g-0'>
-              <button onClick={() => setImg3Show(true)}>
-                <img src={t3} alt="" className='img-fluid p-1 col'/>
-              </button>
-              <Modal size="lg" show={img3Show} onHide={() => setImg3Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t3} alt="" className='img-fluid p-1 col'/>
-                </Modal.Body>
-              </Modal>
-              <button onClick={() => setImg4Show(true)}>
-                <img src={t4} alt="" className='img-fluid p-1 col'/>
-              </button>
-              <Modal size="lg" show={img4Show} onHide={() => setImg4Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t4} alt="" className='img-fluid p-1 col'/>
-                </Modal.Body>
-              </Modal>
-            </div>
-            <div className='col-12 col-lg-4 row g-0'>
-              <button onClick={() => setImg5Show(true)} className='col-md-6 col-lg-12'>
-                <img src={t6} alt="" className='img-fluid col p-1'/>
-              </button>
-              <Modal size="lg" show={img5Show} onHide={() => setImg5Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t6} alt="" className='img-fluid col p-1'/>
-                </Modal.Body>
-              </Modal>
-              <button onClick={() => setImg6Show(true)} className='col-md-6 col-lg-12'>
-                <img src={t7} alt="" className='img-fluid col p-1'/>
-              </button>
-              <Modal size="lg" show={img6Show} onHide={() => setImg6Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                  <img src={t7} alt="" className='img-fluid col p-1'/>
-                </Modal.Body>
-              </Modal>
+            <article>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Para conocerte más en profundidad, "pescarte" a tí y también ampliar tu abordaje profesional.</span>
+              </div>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Para tener más herramientas para tus sesiones.</span>
+              </div>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Aprenderás que tus padres se equivocaron, pero que ellos hicieron lo que pudieron para criarte, que hay que perdonarse a uno mismo, abrazarse, amar a ese niño interior, respirar profundo y seguir; tratar de perdonar, porque el perdón sana, cargar con culpas u odio no.</span>
+              </div>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Es una experiencia que permite conectar con la historia personal en un espacio cuidado.</span>
+              </div>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Te otorga una mirada nueva, distinta y enriquecedora.</span>
+              </div>
+              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Este curso es recomendado para todos los interesados en explorar y sanar las heridas de la infancia.</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        {/* section bonusses */}
+        <div className='p-4'  style={{
+        backgroundImage: `url(${bg3})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+        }}>
+          <div className='bg-cream container-md p-4 text-center'>
+            <header>
+              <h1 className='fw-bold'>Con tu inscripción obtendras:</h1>
+            </header>
+            <article>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Plantilla con recursos de psicoeducación para trabajar con tus consultantes. Incluye Test cualitativos, Ebooks y Workbooks. <span  className='lead'> Valuado en: U$S <s>49</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Listado de Films y música relacionados con la temática. <span  className='lead'> Valuado en: U$S<s>29</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Test específicos para evaluar trauma complejo. <span  className='lead'> Valuado en: U$S<s>47</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Clases grabadas. <span  className='lead'> Valuado en: U$S <s>37</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Plantilla de Recursos de Regulación del Sistema Nervioso. <span  className='lead'> Valuada en: U$S <s>29</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Acceso a supervición en vivo. <span  className='lead'> Valuada en: U$S <s>99</s></span></span>
+              </div>
+              <div className='text-start p-3 border border-info-subtle bg-cream filter-shadow-solid m-2 div-right'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
+                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
+                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
+                </svg> 
+                <span>  Acceso a una Red Exclusiva de Terapeutas para derivación de casos.</span>
+              </div>
+            </article>
+            <div>
+              <a href='https://drive.google.com/file/d/1RMJlizJSzjL9K2z0eCU2j9UqWog6F3Zg/view' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
             </div>
           </div>
         </div>
@@ -620,10 +659,10 @@ function App() {
             <div className='faq-header mb-4 fw-bold text-center'>
               <h2>Precios</h2>
             </div>
-            <p className='lead'><strong>Precio Original</strong> : U$S 299</p>
-            <p className='lead'><strong>Precio especial hasta el 20 de Marzo</strong> : U$S 249 </p>
-            <p className='lead'><strong>Precio para Argentina</strong> :30% OFF  U$S 179 o $197.000 Financiación hasta en 4 cuotas</p>
-            <p className='lead'>Se abono en tu moneda Local - Financiación disponible con Tarjeta de Credito </p>
+            <p className='lead '><strong>Precio Original</strong> :<s> U$S 299</s></p>
+            <p className='lead'><strong>Precio especial por lanzamiento</strong> : U$S 249 </p>
+            <p className='lead'><strong>En cuotas</strong> :5 cuotas fijas de $42.000</p>
+            <p className='lead'><strong>Precios para otros países</strong>: Se abona en tu moneda Local - Financiación disponible con Tarjeta de Credito hasta en 12 cuotas - </p>
             <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/17MqWB8b4oL_tcS1fwzhR5aSs9llPKVFN/view?usp=drive_link' target='_blank' className='link-info'>AQUÍ</a></p>
           </div>
           <div className="row">
@@ -694,6 +733,18 @@ function App() {
               <Accordion.Header>¿Obtendré un certificado al finalizar el Programa?</Accordion.Header>
               <Accordion.Body>
                 Al finalizar el programa obtendrás un certificado de asistencia. Para acceder al certificado de aprobación deberás participar del primer y último Workshop en Vivo y completar el formulario de Autoevaluación Final 
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>¿Puedo sumarme una vez ya iniciado el curso?</Accordion.Header>
+              <Accordion.Body>
+              Sí puedes sumarte en cualquier momento ya que el material queda grabado y puedes hacerlo a tu ritmo.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>¿Qué pasa su no es lo que busco?</Accordion.Header>
+              <Accordion.Body>
+              Si en el plazo de las primeras dos semanas te das cuenta de que el Programa no es lo que buscabas te devolvemos tu dinero. 
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
