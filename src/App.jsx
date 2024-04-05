@@ -542,42 +542,35 @@ function App() {
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Para conocerte más en profundidad, "pescarte" a tí y también ampliar tu abordaje profesional.</span>
+                <span>  Para conocerte más en profundidad y sanar las heridas emocionales que afectan tu vida personal y profesional.</span>
               </div>
               <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Para tener más herramientas para tus sesiones.</span>
+                <span>  Para sumar herramientas creativas y efectivas a tus sesiones de trabajo.</span>
               </div>
               <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Aprenderás que tus padres se equivocaron, pero que ellos hicieron lo que pudieron para criarte, que hay que perdonarse a uno mismo, abrazarse, amar a ese niño interior, respirar profundo y seguir; tratar de perdonar, porque el perdón sana, cargar con culpas u odio no.</span>
+                <span>  Para aprender un método probado que ayuda a aliviar las secuelas del trauma complejo y acompañar a tus pacientes desde un nuevo lugar.</span>
               </div>
               <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Es una experiencia que permite conectar con la historia personal en un espacio cuidado.</span>
+                <span>  Para participar de un espacio de expresión  y acompañamiento grupal entre colegas y promover recursos de autocuidado personal y profesional.</span>
               </div>
               <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
                   <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
                   <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
                 </svg> 
-                <span>  Te otorga una mirada nueva, distinta y enriquecedora.</span>
-              </div>
-              <div className='text-start p-3 border border-danger-subtle bg-cream filter-shadow-solid m-2 div-right'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check2-square" viewBox="0 0 16 16">
-                  <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5z"/>
-                  <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0"/>
-                </svg> 
-                <span>  Este curso es recomendado para todos los interesados en explorar y sanar las heridas de la infancia.</span>
+                <span>  Para convertirte en ese profesional que anhelas ser y expandir  todo tu potencial. </span>
               </div>
             </article>
           </div>
