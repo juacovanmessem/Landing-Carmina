@@ -186,7 +186,7 @@ function App() {
             <CountdownTimer targetDate="2024-03-20T00:00:00" />
           </div> */}
           <div className='lead'>
-            <p><span className='fw-bold fs-3'> 30% OFF:</span><span className='fs-5'> 5 cuotas fijas de </span><span className='fs-3'> $42.000</span><span className='fs-5'> o de contado </span><span className='fs-3'> U$S 197</span></p>
+            <p><span className='fw-bold fs-3'> 30% OFF:</span><span className='fs-3'>5 cuotas fijas de $47.000</span></p>
           </div>
           <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Reserva tu lugar ahora</a>
         </div>
@@ -654,8 +654,8 @@ function App() {
             </div>
             <p className='lead '><strong>Precio Original</strong> :<s> U$S 299</s></p>
             <p className='lead'><strong>Precio especial por lanzamiento</strong> : U$S 249 </p>
-            <p className='lead'><strong>En cuotas</strong> :5 cuotas fijas de $42.000</p>
-            <p className='lead'><strong>Precios para otros países</strong>: Se abona en tu moneda Local - Financiación disponible con Tarjeta de Credito hasta en 12 cuotas - </p>
+            <p className='lead'><strong>Oferta para Argentina</strong> :5 CUOTAS FIJAS DE $47.000 o un pago de $209.000</p>
+            <p className='lead'><strong>Precios para otros países</strong>: Se abona en tu moneda Local - Financiación disponible con Tarjeta de Crédito hasta en 12 cuotas - </p>
             <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/17MqWB8b4oL_tcS1fwzhR5aSs9llPKVFN/view?usp=drive_link' target='_blank' className='link-info'>AQUÍ</a></p>
           </div>
           <div className="row">
@@ -666,7 +666,7 @@ function App() {
               <div className="card payment-card h-100">
                 <div className="card-body">
                   <h5 className="card-title">Pagos Internacionales</h5>
-                  <p className="card-text">Realiza pagos internacionales de forma segura y rápida.</p>
+                  <p className="card-text">Realizá pagos internacionales de forma segura y rápida.</p>
                   <a href="https://go.hotmart.com/W91118440N" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
@@ -675,7 +675,7 @@ function App() {
               <div className="card payment-card h-100">
                 <div className="card-body">
                   <h5 className="card-title">Pagos desde Argentina</h5>
-                  <p className="card-text">Chatea con nosotros para ofrecerte la opción de pago que más te convenga.</p>
+                  <p className="card-text">Chateá con nosotros para ofrecerte la opción de pago que más te convenga.</p>
                   <a href="https://wa.me/message/J7LHFZTGP532D1" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
@@ -684,7 +684,7 @@ function App() {
               <div className="card payment-card h-100">
                 <div className="card-body">
                   <h5 className="card-title">Otras consultas</h5>
-                  <p className="card-text">Contacta con nosotros a traves de WhastApp.</p>
+                  <p className="card-text">Contactá con nosotros a traves de WhastApp.</p>
                   <a href="https://wa.me/message/J7LHFZTGP532D1" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Contactarse</a>
                 </div>
               </div>
@@ -747,10 +747,10 @@ function App() {
         {/* section punch line */}
         <div className='p-5 text-center'>
           <p className='fs-3 fst-italic'>
-            "Fuimos heridos en relaciones tempranas lo cual significa que vamos a sanar en relación. Las relaciones pueden ser fuente de sanación que si se abordan adecuadamente, con presencia y compasión." -Gabor Maté. 
+            "Fuimos heridos en relaciones tempranas lo cual significa que vamos a sanar en relación. Las relaciones pueden ser fuente de sanación si se abordan adecuadamente, con presencia y compasión." -Gabor Maté. 
           </p>
           <p className='fs-3 lead'>
-            Si estas listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
+            Si estás listo para iniciar este viaje, te espero adentro. Con cariño, Carmina.
           </p>
           <img src={Carmina} alt="" className='img-small'/>
         </div>
