@@ -265,3 +265,46 @@
     max-height: 300px;
   }
 }
+
+
+.bg-hot-sale {
+  background-color: crimson;
+}
+
+.hot-sale-badge{
+  position: absolute;
+  top: -2px;
+  left: 0;
+  padding: 10px;
+  background-color: crimson; 
+  color: #fff;
+  font-weight: 700;
+}
+
+.triangle-down{
+  width: 0;
+  height: 0;
+  border-left: 83px solid transparent;
+  border-right: 83px solid transparent;
+  border-bottom:none;
+  border-top: 20px solid crimson;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1330px) {
+  .hot-sale-badge {
+    position: relative;
+    clip-path: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  .triangle-down{
+    display: none;
+  }
+}
