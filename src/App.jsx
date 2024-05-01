@@ -20,6 +20,7 @@ import bg1 from '../src/images/9.jpg'
 import bg2 from '../src/images/10.jpg'
 import bg3 from '../src/images/3.jpg'
 import bg4 from '../src/images/4.jpg'
+import Swal from 'sweetalert2'
 
 
 
@@ -41,56 +42,23 @@ function App() {
     setIndex2(selectedIndex2);
   };
 
+  function hotSale () {
+    Swal.fire({
+      title: "OFERTA EXCLUSIVA POR EL HOT SALE",
+      text: 'Hasta un 50% off',
+      width: 600,
+      padding: "3em",
+      color: "#dc143c",
+      background: "#fff url(/images/trees.png)",
+      backdrop: `
+        rgba(220, 20, 60, 0.251)
+      `,
+      confirmButtonColor: "#dc143c",
+      confirmButtonText: "Ver oferta"
+    });
+  };
 
-
-  // const CountdownTimer = ({ targetDate }) => {
-  //   const calculateTimeLeft = () => {
-  //     const difference = +new Date(targetDate) - +new Date();
-  //     let timeLeft = {};
-  
-  //     if (difference > 0) {
-  //       timeLeft = {
-  //         Días: Math.floor(difference / (1000 * 60 * 60 * 24)),
-  //         Horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
-  //         Minutos: Math.floor((difference / 1000 / 60) % 60),
-  //         Segundos: Math.floor((difference / 1000) % 60)
-  //       };
-  //     }
-  
-  //     return timeLeft;
-  //   };
-  
-  //   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  
-  //   useEffect(() => {
-  //     const timer = setTimeout(() => {
-  //       setTimeLeft(calculateTimeLeft());
-  //     }, 1000);
-  
-  //     return () => clearTimeout(timer);
-  //   });
-  
-  //   const timerComponents = [];
-
-  //   Object.keys(timeLeft).forEach((interval) => {
-  //     if (!timeLeft[interval]) {
-  //       return;
-  //     }
-  
-  //     timerComponents.push(
-  //       <span key={interval}>
-  //         {timeLeft[interval]} {interval}{' '}
-  //       </span>
-  //     );
-  //   });
-  
-  //   return (
-  //     <div>
-  //       {timerComponents.length ? timerComponents :<div><p>Lo sentimos la oferta ya ha terminado, pero igual puedes inscribirte aqui abajo ↓↓</p>
-  //       </div> }
-  //     </div>
-  //   );
-  // };
+  hotSale();
 
   return (
     <>
@@ -102,7 +70,9 @@ function App() {
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat'
         }}>
-          <div className='bg-faded-1 py-2'>
+          <div className='bg-faded-1 py-2 position-relative'>
+            <div className="hot-sale-badge">HOT SALE 50% OFF</div>
+            <div className='triangle-down'></div>
             <h1 className="font-montserrat">ABORDAJE INTEGRAL DEL TRAUMA EN ADULTOS </h1>
             <div className="col-lg-6 mx-auto">
               <p className="lead fs-4 fw-bold mb-4">Programa Online para profesionales de la salud Mental</p>
@@ -112,7 +82,7 @@ function App() {
                 <a href='#professionals' className="btn btn-outline-dark btn-lg px-4">Equipo docente</a>
                 <a href='#recorded-testmonies' className="btn btn-outline-dark btn-lg px-4">Testimonios</a>
               </div>
-              <a href="#payments" className="btn btn-outline-light bg-cyan btn-lg px-4 gap-3 mt-3">Reserva tu lugar en el curso</a>
+              <a href="#payments" className="btn btn-outline-light bg-hot-sale btn-lg px-4 gap-3 mt-3">INSCRIBITE CON EL 50% OFF</a>
           </div>
           </div>
         </div>
@@ -181,14 +151,9 @@ function App() {
       <section>
         {/* section timer */}
         <div className="px-4 py-5 bg-magenta text-center text-black">
-          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA PARA ARGENTINA</h1>
-          {/* <div className='lead fw-bold'>
-            <CountdownTimer targetDate="2024-03-20T00:00:00" />
-          </div> */}
-          <div className='lead'>
-            <p><span className='fw-bold fs-3'> 30% OFF:</span><span className='fs-3'>5 cuotas fijas de $47.000</span></p>
-          </div>
-          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Reserva tu lugar ahora</a>
+          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR HOT SALE</h1>
+
+          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">RESERVÁ TU LUGAR CON EL 50% OFF</a>
         </div>
       </section>
       <section id='methodologies'>
@@ -652,11 +617,10 @@ function App() {
             <div className='faq-header mb-4 fw-bold text-center'>
               <h2>Precios</h2>
             </div>
-            <p className='lead '><strong>Precio Original</strong> :<s> U$S 299</s></p>
-            <p className='lead'><strong>Precio especial por lanzamiento</strong> : U$S 249 </p>
-            <p className='lead'><strong>Oferta para Argentina</strong> :5 CUOTAS FIJAS DE $47.000 o un pago de $209.000</p>
-            <p className='lead'><strong>Precios para otros países</strong>: Se abona en tu moneda Local - Financiación disponible con Tarjeta de Crédito hasta en 12 cuotas - </p>
-            <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/17MqWB8b4oL_tcS1fwzhR5aSs9llPKVFN/view?usp=drive_link' target='_blank' className='link-info'>AQUÍ</a></p>
+            <p className='lead '><strong>Precio Original</strong> :<s> U$S 199 </s> ahora por U$S 109</p>
+            <p className='lead'><strong>Precio para Argentina</strong> :<s> $199.000 </s> ahora en 4 cuotas sin interés de $24900 cada una ($99.000)</p>
+            <p className='lead'><strong>Para otros países</strong>: Se abona en tu moneda Local desde Hotmart - Financiación disponible con Tarjeta de Credito hasta en 12 cuotas sin interes - </p>
+            <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/1W-KhIklgB176T-1wR0kunh4QWNdO6IV1/view?usp=drive_link ' target='_blank' className='link-info'>AQUÍ</a></p>
           </div>
           <div className="row">
             <div className='faq-header mb-4 fw-bold text-center'>
@@ -667,7 +631,7 @@ function App() {
                 <div className="card-body">
                   <h5 className="card-title">Pagos Internacionales</h5>
                   <p className="card-text">Realizá pagos internacionales de forma segura y rápida.</p>
-                  <a href="https://go.hotmart.com/W91118440N" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
+                  <a href="https://pay.hotmart.com/W91118440N?off=ikexnti1 " target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
             </div>
