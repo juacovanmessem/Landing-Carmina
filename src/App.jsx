@@ -6,9 +6,11 @@ import Collapse from 'react-bootstrap/Collapse';
 import Modal from 'react-bootstrap/Modal';
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from 'react-bootstrap/Carousel';
+import StickyButton from './StickyButton';
 import Carmina from '../src/images/foto-redes.jpg'
 import agustin from '../src/images/AGUSTIN-GRAS.jpg'
 import judith from '../src/images/JUDITH-RODRIGUEZ.jpg'
+import andres from '../src/images/Andres-Darsie.jpg'
 import maru from '../src/images/maru-gonzalez.jpg'
 import f1 from '../src/images/flyer.jpg'
 import v1 from '../src/videos/t-paciente1.mp4'
@@ -43,22 +45,10 @@ function App() {
   };
 
   function hotSale () {
-    Swal.fire({
-      title: "OFERTA EXCLUSIVA POR EL HOT SALE",
-      text: 'Hasta un 50% off',
-      width: 600,
-      padding: "3em",
-      color: "#dc143c",
-      background: "#fff url(/images/trees.png)",
-      backdrop: `
-        rgba(220, 20, 60, 0.251)
-      `,
-      confirmButtonColor: "#dc143c",
-      confirmButtonText: "Ver oferta"
-    });
+
   };
 
-  hotSale();
+  hotSale();  
 
   return (
     <>
@@ -71,25 +61,29 @@ function App() {
         backgroundRepeat: 'no-repeat'
         }}>
           <div className='bg-faded-1 py-2 position-relative'>
-            <div className="hot-sale-badge">HOT SALE 50% OFF</div>
+            <div className="hot-sale-badge">PROMO VERANO 25% OFF</div>
             <div className='triangle-down'></div>
-            <h1 className="font-montserrat">ABORDAJE INTEGRAL DEL TRAUMA EN ADULTOS </h1>
+            <h1 className="font-montserrat">SANANDO LAS HERIDAS EMOCIONALES </h1>
             <div className="col-lg-6 mx-auto">
-              <p className="lead fs-4 fw-bold mb-4">Programa Online para profesionales de la salud Mental</p>
+              <p className="lead fs-4 fw-bold mb-4">Recursos integrales para psicólogos</p>
               <p className="lead mb-4">Conviértete en un profesional informado en Trauma y descubre un modelo de abordaje que integra: Gestalt, neurociencias y terapia corporal en el tratamiento del trauma complejo en adultos.</p>
               <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href='#methodologies' className="btn btn-outline-dark btn-lg px-4">Plan de estudios</a>
                 <a href='#professionals' className="btn btn-outline-dark btn-lg px-4">Equipo docente</a>
                 <a href='#recorded-testmonies' className="btn btn-outline-dark btn-lg px-4">Testimonios</a>
               </div>
-              <a href="#payments" className="btn btn-outline-light bg-hot-sale btn-lg px-4 gap-3 mt-3">INSCRIBITE CON EL 50% OFF</a>
-          </div>
+              <a href="#payments" className="btn btn-outline-light bg-hot-sale btn-lg px-4 gap-3 mt-3">INSCRIBITE CON EL 25% OFF (PROMO VERANO)</a>
+            </div>
           </div>
         </div>
       </section>
+      <section className='sticky-top bg-cyan pb-3'>
+        {/*boton de compra sticky*/}
+        <StickyButton/>
+      </section>
       <section>
         {/* section promotion */}
-        <div className="px-4 py-5 bg-cyan text-black row g-0">
+        <div className="px-4 pb-5 bg-cyan text-black row g-0">
           <div className=' col-lg-6 col-12 row g-0 justify-content-center'>  
           <img src={f1} alt="Flyer del curso ofrecido" className='img-fluid rounded img-height p-4 col-12 col-md-10 col-lg-6 w-auto' />   
           </div>
@@ -121,7 +115,7 @@ function App() {
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat'
         }}>
-          <div className="col-lg-11 p-3 mx-auto bg-faded-2">
+          <div className="col-lg-11 p-3 mx-auto bg-faded-3">
             <p className="display-6 mb-4 text-center fw-bold">Una breve historia </p>
             <p className="lead mb-4 text-align-justify">Si estás acá es porque estás buscando nuevas maneras de acompañar a tus pacientes y las herramientas con las que cuentas te están resultando insuficientes. </p>
             <p className="lead mb-4 text-align-justify">Yo tambien estuve ahi… y me sentía muy culpable por no poder ayudar realmente a aliviar el sufrimiento de mis pacientes. En especial de aquellos que habían compartido conmigo situaciones muy dolorosas de su infancia y adolescencia.</p>
@@ -151,9 +145,9 @@ function App() {
       <section>
         {/* section timer */}
         <div className="px-4 py-5 bg-magenta text-center text-black">
-          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR HOT SALE</h1>
+          <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR EL VERANO</h1>
 
-          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">RESERVÁ TU LUGAR CON EL 50% OFF</a>
+          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">RESERVÁ TU LUGAR CON EL 25% OFF</a>
         </div>
       </section>
       <section id='methodologies'>
@@ -199,7 +193,7 @@ function App() {
               </div>
             </article>
             <div>
-              <a href='https://drive.google.com/file/d/1RMJlizJSzjL9K2z0eCU2j9UqWog6F3Zg/view' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
+              <a href='https://drive.google.com/file/d/1WFuZ6i0CG4LMJ6dp_uVCbhVp4Nf5OrIT/view?usp=sharing' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
             </div>
           </div>
         </div>
@@ -218,11 +212,8 @@ function App() {
             <div className='col-12 row g-0 justify-content-center div-right'>
               <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>MENTORÍAS EN VIVO:</strong> espacio grupal de intercambio para profundizar en algunos conceptos, realizar prácticas y responder preguntas sobre el material teórico.</p></div>
             </div>
-            <div  className='col-12 row g-0 justify-content-center div-right'>
-              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>TALLERES VIVENCIALES:</strong> Participarás de workshops sobre temáticas específicas con profesionales invitados referentes en el campo del abordaje integral en Trauma.</p></div>
-            </div>
             <div className='col-12 row g-0 justify-content-center div-right'>
-              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>MATERIAL DE ESTUDIO:</strong> accederás a bibliografía específica para cada tema además de una base libros en pdf y artículos científicos con más de 50 ejemplares disponibles.</p></div>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>MATERIAL DE ESTUDIO:</strong> accederás a bibliografía específica para cada tema con libros y artìculos descargables de los grandes referentes de la psicotraumatologìa mundial.</p></div>
             </div>
             <div  className='col-12 row g-0 justify-content-center div-right'>
               <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>MATERIAL COMPLEMENTARIO:</strong> videos, films y temas musicales que podrás usar para armar tu propia batería de recursos de asistencia y psicoeducación.</p></div>
@@ -231,10 +222,10 @@ function App() {
               <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>COMUNIDAD EXCLUSIVA DE INTERCAMBIO:</strong> formarás parte de una comunidad exclusiva de acompañamiento a través de Whatsapp durante todo el cursado.</p></div>
             </div>
             <div className='col-12 row g-0 justify-content-center div-right'>
-              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'> MODALIDAD DE CURSADO</strong>: La propuesta de Cursado es Online a través de la Plataforma ZOOM y el material complementario estará disponible en una plataforma de E Learning de por vida. Podrás hacer consultas de manera asincrónica y ver las clases en el momento que lo decidas.</p></div>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'> MODALIDAD DE CURSADO</strong>: la propuesta de cursado es ONLINE y A TU RITMO, tendrás acceso INMEDIATO  al material en cuanto te inscribas. Accederas al grupo de Whatsapp y una vez al mes nos encontraremos para dudas y supervisión.</p></div>
             </div>
             <div className='col-12 row g-0 justify-content-center div-right'>
-              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>DESTINATARIOS</strong>: psicologos, psiquiatras y estudiantes avanzados de la salud mental; profesionales de la educación y el desarrollo social (podran realizar el programa introductorio: módulos 1 y 2) </p></div>
+              <div className='col-12 col-md-10 bg-cream rounded-box mb-4'><p className='py-4 ps-5 lead col-10'><strong className='fw-bold'>DESTINATARIOS</strong>: psicólogos, psiquiatras y estudiantes avanzados de la salud mental y profesiones afines. </p></div>
             </div>
           </div>
         </div>
@@ -288,14 +279,16 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='col-12 section-subtitle text-light pb-2'><h2>DOCENTES INVITADOS </h2></div>
+          <div className='col-12 section-subtitle text-light pb-2'><h2>MASTER CLASS GRABADAS CON DOCENTES INVITADOS </h2></div>
           <div className='col-11 col-md-5 col-lg-3 my-3'>
             <div className="card bg-cream">
               <img src={agustin} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title bg-magenta text-black px-2">Agustín Gras</h5>
-                <p className="card-text">Certificación en Psicotraumatología CCTP III - especialización en Trauma Complejo y Trastornos Disociativos.</p>
-                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg1Show(true)}>Mas información</Button>
+                <h5 className="card-title bg-magenta text-black px-2">Lic. Agustín Gras</h5>
+                <p className="card-text">Lic en Psicología Universidad Católica de Córdoba. </p>
+                <p> Certificación en Psicotraumatología y Especialización en Trauma Complejo y Trastornos Disociativos.</p>
+                <p>Master en psicoterapias conductuales-contextuales- España.</p>
+                {/* <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg1Show(true)}>Mas información</Button> */}                 
               </div>
             </div>
             <Modal size="lg" show={lg1Show} onHide={() => setLg1Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
@@ -318,11 +311,41 @@ function App() {
           </div>
           <div className='col-11 col-md-5 col-lg-3 my-3'>
             <div className="card bg-cream">
+              <img src={andres} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title bg-magenta text-black px-2">Lic. Andres Darsie</h5>
+                <p className="card-text">Lic en Psicología</p>
+                <p>Formado como Coordinador Grupal Bioenergetista en Bs As (Bioescuela).</p>
+                <p>Posgrado en Psicoterapia Corporal del Centro de Psicoterapia Corporal Cordoba Arg. </p>
+                <p>Miembro, co-fundador y docente del Centro de Terapia Corporal Integral</p>
+                {/* <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg3Show(true)}>Mas información</Button> */}
+              </div>
+            </div>
+            <Modal size="lg" show={lg3Show} onHide={() => setLg3Show(false)} aria-labelledby="example-modal-sizes-title-lg">
+              <Modal.Header closeButton>
+                <Modal.Title id="example-modal-sizes-title-lg">
+                  Judith Rodriguez
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <ul className='lead'>
+                  <li>Lic Judith Rodriguez - Licenciada en Psicología por la Universidad Nacional de Córdoba, Argentina.</li>
+                  <li>Psicoterapeuta Gestáltica y Psicoterapeuta Corporal con orientación Reichiana, con más de 20 años de experiencia clínica</li>
+                  <li>Especialista en Eneagrama y Profesora de Respiración Ovárica.</li>
+                  <li>Formación complementaria en Psicooncología y Terapia Cognitiva Conductual.</li>
+                  <li>Actualmente cursando la Formación en Psicología Positiva.</li>
+                </ul>
+              </Modal.Body>
+            </Modal>
+          </div>
+          <div className='col-11 col-md-5 col-lg-3 my-3'>
+            <div className="card bg-cream">
               <img src={maru} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title bg-magenta text-black px-2">Mariana Indira González</h5>
-                <p className="card-text">Psicoterapeuta Gestáltica - Psicóloga Forense Fuero Penal Formación en Litigio con perspectiva de Género.</p>
-                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg2Show(true)}>Mas información</Button>
+                <p className="card-text">Psicoterapeuta Gestáltica</p>
+                <p>Psicóloga Forense del Fuero Penal con formación en Litigio con perspectiva de Género.</p>
+                {/* <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg2Show(true)}>Mas información</Button> */}
               </div>
             </div>
             <Modal size="lg" show={lg2Show} onHide={() => setLg2Show(false)} aria-labelledby="example-modal-sizes-title-lg" >
@@ -340,32 +363,6 @@ function App() {
                   <li>Asesora en Salud Sexual Integral para Adolescentes Min. De Salud de Nación y PNUD</li>
                   <li>Acompañamiento a Comunidades vulnerables : Miembro Fundadora Fundación Aceptarte y Programa de Orquestas y Coros del Bicentenario Min. De Educación de Nación.</li>
                   <li>Capacitadora a docentes en el Noa (Min de Educación, FAAIE y Acompañantes Terapéuticos en Centro Amatista)</li>
-                </ul>
-              </Modal.Body>
-            </Modal>
-          </div>
-          <div className='col-11 col-md-5 col-lg-3 my-3'>
-            <div className="card bg-cream">
-              <img src={judith} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title bg-magenta text-black px-2">Judith Rodriguez</h5>
-                <p className="card-text">Psicoterapeuta gestáltica - Psicoterapeuta corporal con orientación Reicheana, Especialista en Eneagrama</p>
-                <Button className='bg-magenta text-black' variant='outline-info' onClick={() => setLg3Show(true)}>Mas información</Button>
-              </div>
-            </div>
-            <Modal size="lg" show={lg3Show} onHide={() => setLg3Show(false)} aria-labelledby="example-modal-sizes-title-lg">
-              <Modal.Header closeButton>
-                <Modal.Title id="example-modal-sizes-title-lg">
-                  Judith Rodriguez
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <ul className='lead'>
-                  <li>Lic Judith Rodriguez - Licenciada en Psicología por la Universidad Nacional de Córdoba, Argentina.</li>
-                  <li>Psicoterapeuta Gestáltica y Psicoterapeuta Corporal con orientación Reichiana, con más de 20 años de experiencia clínica</li>
-                  <li>Especialista en Eneagrama y Profesora de Respiración Ovárica.</li>
-                  <li>Formación complementaria en Psicooncología y Terapia Cognitiva Conductual.</li>
-                  <li>Actualmente cursando la Formación en Psicología Positiva.</li>
                 </ul>
               </Modal.Body>
             </Modal>
@@ -617,10 +614,9 @@ function App() {
             <div className='faq-header mb-4 fw-bold text-center'>
               <h2>Precios</h2>
             </div>
-            <p className='lead '><strong>Precio Original</strong> :<s> U$S 199 </s> ahora por U$S 109</p>
-            <p className='lead'><strong>Precio para Argentina</strong> :<s> $199.000 </s> ahora en 4 cuotas sin interés de $24900 cada una ($99.000)</p>
-            <p className='lead'><strong>Para otros países</strong>: Se abona en tu moneda Local desde Hotmart - Financiación disponible con Tarjeta de Credito hasta en 12 cuotas sin interes - </p>
-            <p className='lead fw-bold'>PROGRAMA INTRODUCTORIO PARA PROFESIONALES DE LA EDUCACION Y EL DESARROLLO SOCIAL, CONSULTAR <a href='https://drive.google.com/file/d/1W-KhIklgB176T-1wR0kunh4QWNdO6IV1/view?usp=drive_link ' target='_blank' className='link-info'>AQUÍ</a></p>
+            <p className='lead '><strong>Precio Original</strong> :<s> $99.000 </s> ahora con un 25% OFF: $74.900</p>
+            <p className='lead'><strong>Puedes abonar en hasta 3 cuotas sin interes</strong> con tarjeta de crédito</p>
+            <p className='lead'><strong>Para Transferencias te ofrecemos un 35% OFF</strong>: $64.900</p>
           </div>
           <div className="row">
             <div className='faq-header mb-4 fw-bold text-center'>
@@ -629,17 +625,17 @@ function App() {
             <div className="col-md-6 col-lg-4 mb-4">
               <div className="card payment-card h-100">
                 <div className="card-body">
-                  <h5 className="card-title">Pagos Internacionales</h5>
-                  <p className="card-text">Realizá pagos internacionales de forma segura y rápida.</p>
-                  <a href="https://pay.hotmart.com/W91118440N?off=ikexnti1 " target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
+                  <h5 className="card-title">Pagos con Tarjeta</h5>
+                  <p className="card-text">Realizá tu compra desde nuestra página oficial</p>
+                  <a href="https://carminavarelapsicologa.tiendup.com/curso/sanando-las-heridas-emocionales-recursos-integrales-para-psicologos " target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mb-4">
               <div className="card payment-card h-100">
                 <div className="card-body">
-                  <h5 className="card-title">Pagos desde Argentina</h5>
-                  <p className="card-text">Chateá con nosotros para ofrecerte la opción de pago que más te convenga.</p>
+                  <h5 className="card-title">Pagos por transferencia</h5>
+                  <p className="card-text">Chateá con nosotros para concretar el pago.</p>
                   <a href="https://wa.me/message/J7LHFZTGP532D1" target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
               </div>
@@ -656,57 +652,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='pb-5 pt-3' style={{
-        backgroundImage: `url(${bg2})`,
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat'
-        }}>
-        {/* section common questions */}
-        <div className='container-sm'>
-          <div className='faq-header mb-4 fw-bold text-center text-white'>
-            <h2>Preguntas frecuentes</h2>
-          </div>
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>¿Qué pasa si no puedo estar en las clases en vivo?</Accordion.Header>
-              <Accordion.Body>
-                Tanto el material teórico como las mentorías se grabaran y subirán a la plataforma Hotmart y podrás acceder a ellas de por vida con tu usuario y contraseña.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>¿Hay algun contenido disponible para ver antes de comenzar el curso?</Accordion.Header>
-              <Accordion.Body>
-                Si, la primera clase estará disponible desde  el 20 de Marzo en la Plataforma
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>¿Cómo hago para ver las clases?</Accordion.Header>
-              <Accordion.Body>
-                Una vez que te inscribas seras incorporado a un grupo de Whatsapp exclusivo de la Formación, Las clases teóricas se suben semanalmente a la plataforma y las mentorías en vivo se desarrollan a través de la plataforma ZOOM. Recibirás el enlace y el acceso a todo el material a través del Grupo.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-              <Accordion.Header>¿Obtendré un certificado al finalizar el Programa?</Accordion.Header>
-              <Accordion.Body>
-                Al finalizar el programa obtendrás un certificado de asistencia. Para acceder al certificado de aprobación deberás participar del primer y último Workshop en Vivo y completar el formulario de Autoevaluación Final 
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="4">
-              <Accordion.Header>¿Puedo sumarme una vez ya iniciado el cursado?</Accordion.Header>
-              <Accordion.Body>
-              Sí puedes sumarte en cualquier momento ya que el material queda grabado y puedes hacerlo a tu ritmo.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="5">
-              <Accordion.Header>¿Qué pasa si no es lo que busco?</Accordion.Header>
-              <Accordion.Body>
-              Si en el plazo de las primeras dos semanas te das cuenta de que el Programa no es lo que buscabas te devolvemos tu dinero. 
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-      </section>
+      
       <section className='bg-cream'>
         {/* section punch line */}
         <div className='p-5 text-center'>
@@ -732,13 +678,14 @@ function App() {
           <a href='#main' className='btn btn-dark mx-2 my-1 btn-lg btn-fixed fs-3'>↑</a>
         </div>
         <div>
-          <a target='_blank' href='https://wa.me/message/J7LHFZTGP532D1' className='btn btn-success mx-2 my-1 btn-fixed btn-lg text-center px-2'>
+          <a target='_blank' href='https://wa.me/5493812102004' className='btn btn-success mx-2 my-1 btn-fixed btn-lg text-center px-2'>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
             </svg>
           </a>
         </div>
       </section>
+
     </>
   )
 }

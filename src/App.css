@@ -61,6 +61,12 @@
   backdrop-filter: blur(10px);
   background-color: #f3f1f189;
 }
+.bg-faded-3{
+  backdrop-filter: blur(10px);
+  background-color: #f3f1f1d7;
+  border-radius: 16px;
+  color: #000;
+}
 
 .bi-quote{
   transform: scaleY(-1) scaleX(-1);
