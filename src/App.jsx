@@ -61,7 +61,7 @@ function App() {
         backgroundRepeat: 'no-repeat'
         }}>
           <div className='bg-faded-1 py-2 position-relative'>
-            <div className="hot-sale-badge">PROMO VERANO 25% OFF</div>
+            <div className="hot-sale-badge">PROMO VERANO HASTA UN 35% OFF</div>
             <div className='triangle-down'></div>
             <h1 className="font-montserrat">SANANDO LAS HERIDAS EMOCIONALES </h1>
             <div className="col-lg-6 mx-auto">
@@ -72,7 +72,7 @@ function App() {
                 <a href='#professionals' className="btn btn-outline-dark btn-lg px-4">Equipo docente</a>
                 <a href='#recorded-testmonies' className="btn btn-outline-dark btn-lg px-4">Testimonios</a>
               </div>
-              <a href="#payments" className="btn btn-outline-light bg-hot-sale btn-lg px-4 gap-3 mt-3">INSCRIBITE CON EL 25% OFF (PROMO VERANO)</a>
+              <a href="#payments" className="btn btn-outline-light bg-hot-sale btn-lg px-4 gap-3 mt-3">INSCRIBITE CON EL 35% OFF (PROMO VERANO)</a>
             </div>
           </div>
         </div>
@@ -129,11 +129,11 @@ function App() {
             </Button>
             <Collapse in={open}>
               <div id="example-collapse-text">
-                <p className="lead my-4 text-align-justify">Entendí que las personas que han sufrido experiencias adversas en la infancia tales como abandono, abuso, negligencia, violencia en diferentes formas, tienen algo en común. Hay una parte de ellas que quedó en el pasado y que encierra cientos de imágenes emociones y sensaciones corporales que guardadas bajo llave para defenderse del  dolor. Y todo ese esfuerzo por dejar atrás ese pasado muchas veces se lleva consigo aspectos como la confianza, la creatividad, la capacidad de disfrute, el autocuidado y la posibilidad de vivir una vida en plenitud.</p>            
-                <p className="lead mb-4 text-align-justify">Puedo entender lo que me pasa racionalmente pero me cuesta no desbordarme emocionalmente.</p>
-                <p className="lead mb-4 text-align-justify">No puedo confiar en nadie porque siento que todos pueden lastimarme.</p>
-                <p className="lead mb-4 text-align-justify">Cuando alguien me grita o confronta quiero desaparecer… me hago chiquitita y me paralizo.</p>
-                <p className="lead mb-4 text-align-justify">Elijo siempre el mismo tipo de parejas y es como si no mereciera que me amen bien.</p>
+                <p className="lead my-4 text-align-justify">Entendí que las personas que han sufrido experiencias adversas en la infancia tales como abandono, abuso, negligencia, violencia en diferentes formas, tienen algo en común. Hay una parte de ellas que quedó en el pasado y que encierra cientos de imágenes emociones y sensaciones corporales quedan guardadas bajo llave para defenderse del  dolor. Y todo ese esfuerzo por dejar atrás ese pasado muchas veces se lleva consigo aspectos como la confianza, la creatividad, la capacidad de disfrute, el autocuidado y la posibilidad de vivir una vida en plenitud.</p>            
+                <p className="lead mb-4 text-align-justify fst-italic">"Puedo entender lo que me pasa racionalmente pero me cuesta no desbordarme emocionalmente."</p>
+                <p className="lead mb-4 text-align-justify fst-italic">"No puedo confiar en nadie porque siento que todos pueden lastimarme."</p>
+                <p className="lead mb-4 text-align-justify fst-italic">"Cuando alguien me grita o confronta quiero desaparecer… me hago chiquitita y me paralizo."</p>
+                <p className="lead mb-4 text-align-justify fst-italic">"Elijo siempre el mismo tipo de parejas y es como si no mereciera que me amen bien."</p>
                 <p className="lead mb-4 text-align-justify">Estas son algunas de las frases que dicen mis pacientes con frecuencia y que son la puerta de entrada a situaciones mucho más profundas que afectaron su autoestima, su capacidad de resiliencia y su personalidad.</p>
                 <p className="lead mb-4 text-align-justify">El trauma está en el cuerpo y un sistema nervioso desregulado es la base de estas manifestaciones. Por eso como terapeutas necesitamos saber cómo intervenir en estos casos para brindar un acompañamiento idóneo y efectivo.</p>
                 <p className="lead mb-4 text-align-justify">Imagina poder ofrecer a tus clientes una terapia significativa, centrada en abordar las raíces profundas del trauma y facilitar el proceso de curación descubre el poder de la integración cuerpo mente basada en evidencia científica. </p>
@@ -147,7 +147,7 @@ function App() {
         <div className="px-4 py-5 bg-magenta text-center text-black">
           <h1 className="display-6 fw-bold">OFERTA EXCLUSIVA POR EL VERANO</h1>
 
-          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">RESERVÁ TU LUGAR CON EL 25% OFF</a>
+          <a href='#payments' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">RESERVÁ TU LUGAR CON EL 35% OFF</a>
         </div>
       </section>
       <section id='methodologies'>
@@ -602,7 +602,7 @@ function App() {
               </div>
             </article>
             <div>
-              <a href='https://drive.google.com/file/d/1RMJlizJSzjL9K2z0eCU2j9UqWog6F3Zg/view' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
+              <a href='https://drive.google.com/file/d/1WFuZ6i0CG4LMJ6dp_uVCbhVp4Nf5OrIT/view?usp=sharing' target='_blank' className="btn btn-outline-dark btn-lg px-4 gap-3 mt-3 fw-bold">Ver programa completo</a>
             </div>
           </div>
         </div>
@@ -625,7 +625,7 @@ function App() {
             <div className="col-md-6 col-lg-4 mb-4">
               <div className="card payment-card h-100">
                 <div className="card-body">
-                  <h5 className="card-title">Pagos con Tarjeta</h5>
+                  <h5 className="card-title">Pagos con Tarjeta o desde el exterior</h5>
                   <p className="card-text">Realizá tu compra desde nuestra página oficial</p>
                   <a href="https://carminavarelapsicologa.tiendup.com/curso/sanando-las-heridas-emocionales-recursos-integrales-para-psicologos " target='_blank' className="payment-link stretched-link btn btn-outline-dark">Realizar pago</a>
                 </div>
